@@ -220,7 +220,9 @@ const router = new koa_router__WEBPACK_IMPORTED_MODULE_0___default.a({
   prefix: '/city'
 });
 router.get('/list', async ctx => {
-  ctx.body = ['西安', '延安'];
+  ctx.body = {
+    list: ['西安', '延安']
+  };
 });
 /* harmony default export */ __webpack_exports__["default"] = (router);
 
